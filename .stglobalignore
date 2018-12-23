@@ -1,0 +1,79 @@
+// CHECK IT AGAIN BEFORE YOU USE IT!
+// .stglobalignore
+
+// Operating system generated files
+	// GNU/Linux & UN*X
+	    .directory
+    	.Trash-*
+
+	// Apple macOS
+		(?d).DS_Store
+		(?d).localized
+		(?d)._*
+		(?d)Icon*
+		.fseventsd
+		.Spotlight-V100
+		.TemporaryItems
+		.Trashes
+		.Trash-1000
+		.iCloud
+
+	// Mcirosoft Windows
+		(?d)desktop.ini
+		(?d)ehthumbs.db
+		(?d)Thumbs.db
+		(?d)$RECYCLE.BIN
+		System Volume Information
+
+// Application generated files
+	// Adobe Lightroom
+		*Previews.lrdata root-pixels.db
+
+	// Microsoft Office
+		(?d)~*
+
+	// Dropbox
+		.dropbox
+		.dropbox.attr
+
+	// Resilio Sync
+		.sync
+		*.bts
+		*.!Sync
+		.SyncID
+		.SyncIgnore
+		.SyncArchive
+		*.SyncPart
+		*.SyncTemp
+		*.SyncOld
+
+	// Synology DSM
+		(?d)@eaDir
+
+	// QNAP QTS
+		(?d).AppleDB
+		(?d).@_thumb
+		(?d).@__thumb
+
+	// Firefox & Chrom(ium|e)
+		*.part
+		*.crdownload
+	
+	//Parallels Desktop for Mac
+		.parallels-vm-directory
+
+	// Vim
+		(?d)*.*.sw[a-p]
+
+// Temporary and backup files
+	*.temporary
+	*.tmp
+	*._mp
+	*.old
+	*.syd
+	*.gid
+	*.chk
+	*.dmp
+	*.nch
+	.*.swp
+	*~
