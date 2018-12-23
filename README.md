@@ -9,7 +9,7 @@ There are two ways to use this ignore patterns function:
 
 * Paste following code into ```Folders -> Edit -> Ignore Patterns``` window and copy the ```.stglobalignore``` into folder root
     ```     
-    #.stignore
+    // .stignore
 
     include .stglobalignore
     ```

@@ -1,10 +1,11 @@
 // CHECK IT AGAIN BEFORE YOU USE IT!
 // .stglobalignore
 
+
 // Operating system generated files
 	// GNU/Linux & UN*X
 	    .directory
-    	.Trash-*
+	    .Trash-*
 
 	// Apple macOS
 		(?d).DS_Store
@@ -24,6 +25,7 @@
 		(?d)Thumbs.db
 		(?d)$RECYCLE.BIN
 		System Volume Information
+
 
 // Application generated files
 	// Adobe Lightroom
@@ -58,12 +60,13 @@
 	// Firefox & Chrom(ium|e)
 		*.part
 		*.crdownload
-	
+
 	//Parallels Desktop for Mac
 		.parallels-vm-directory
 
 	// Vim
 		(?d)*.*.sw[a-p]
+
 
 // Temporary and backup files
 	*.temporary
