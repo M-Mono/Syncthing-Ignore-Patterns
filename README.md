@@ -1,0 +1,2 @@
+# Syncthing-Ignore-Patterns
+If some files should not be synchronized to other devices, a file called .stignore can be created containing file patterns to ignore. The .stignore file must be placed in the root of the folder. The .stignore file itself will never be synced to other devices, although it can #include files that are synchronized between devices. All patterns are relative to the folder root.
