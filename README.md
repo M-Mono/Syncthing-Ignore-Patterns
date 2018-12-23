@@ -3,10 +3,13 @@ More Infos about [Syncthing ignore patterns](https://docs.syncthing.net/users/ig
 
 There are two ways to use this ignore patterns function:
 
-* Just copy all ```.stglobalignore``` contents in to ```Folders -> Edit -> Ignore Patterns``` window or
-* Paste following code into ```Folders -> Edit -> Ignore Patterns``` window and place the ```.stglobalignore``` into folder root
+* Just copy all ```.stglobalignore``` contents in to ```Folders -> Edit -> Ignore Patterns``` window
+
+    or
+
+* Paste following code into ```Folders -> Edit -> Ignore Patterns``` window and copy the ```.stglobalignore``` into folder root
     ```     
-        #.stignore
-        
-        include .stglobalignore
+    #.stignore
+
+    include .stglobalignore
     ```
