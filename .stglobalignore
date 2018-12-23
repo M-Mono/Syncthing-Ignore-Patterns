@@ -1,44 +1,73 @@
 // CHECK IT AGAIN BEFORE YOU USE IT!
+
 // .stglobalignore
 
+// ┌----------------------------------┐
+// | Operating system generated files |
+// └----------------------------------┘
+// ┌------------------┐
+// | GNU/Linux & UN*X |
+// └------------------┘
+(?d).directory
+(?d).Trash-*
 
-// Operating system generated files
-// GNU/Linux & UN*X
-.directory
-.Trash-*
+// ┌-------------┐
+// | Apple macOS |
+// └-------------┘
+(?d).DS_Store
+(?d).localized
+(?d)._*
+(?d).Icon*
+(?d).fseventsd
+(?d).Spotlight-V100
+(?d).TemporaryItems
+(?d).Trashes
+(?d).Trash-1000
+(?d).iCloud
 
-// Apple macOS
-.DS_Store
-.localized
-._*
-.Icon*
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.Trash-1000
-.iCloud
+// ┌-------------------┐
+// | Mcirosoft Windows |
+// └-------------------┘
+(?d)desktop.ini
+(?d)ehthumbs.db
+(?d)Thumbs.db
+(?d)$RECYCLE.BIN
+(?d)System Volume Information
 
-// Mcirosoft Windows
-desktop.ini
-ehthumbs.db
-Thumbs.db
-$RECYCLE.BIN
-System Volume Information
+// ┌--------------┐
+// | Synology DSM |
+// └--------------┘
+(?d)@eaDir
 
+// ┌----------┐
+// | QNAP QTS |
+// └----------┘
+(?d).AppleDB
+(?d).@_thumb
+(?d).@__thumb
 
-// Application generated files
-// Adobe Lightroom
+// ┌-----------------------------┐
+// | Application generated files |
+// └-----------------------------┘
+// ┌-----------------┐
+// | Adobe Lightroom |
+// └-----------------┘
 *Previews.lrdata root-pixels.db
 
-// Microsoft Office
+// ┌------------------┐
+// | Microsoft Office |
+// └------------------┘
 ~*
 
-// Dropbox
+// ┌---------┐
+// | Dropbox |
+// └---------┘
 .dropbox
 .dropbox.attr
 
-// Resilio Sync
+// ┌--------------┐
+// | Resilio Sync |
+// └--------------┘
 .sync
 *.bts
 *.!Sync
@@ -49,26 +78,25 @@ System Volume Information
 *.SyncTemp
 *.SyncOld
 
-// Synology DSM
-@eaDir
-
-// QNAP QTS
-.AppleDB
-.@_thumb
-.@__thumb
-
-// Firefox & Chrom(ium|e)
+// ┌------------------------┐
+// | Firefox & Chrom(ium|e) |
+// └------------------------┘
 *.part
 *.crdownload
 
-//Parallels Desktop for Mac
+// ┌---------------------------┐
+// | Parallels Desktop for Mac |
+// └---------------------------┘
 .parallels-vm-directory
 
-// Vim
+// ┌-----┐
+// | Vim |
+// └-----┘
 *.*.sw[a-p]
 
-
-// Temporary and backup files
+// ┌----------------------------┐
+// | Temporary and backup files |
+// └----------------------------┘
 *.temporary
 *.tmp
 *._mp
