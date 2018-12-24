@@ -1,19 +1,15 @@
-// CHECK IT AGAIN BEFORE YOU USE IT!
-
+// ╔═══════════════════════════════════╗
+// ║ CHECK IT AGAIN BEFORE YOU USE IT! ║
+// ╚═══════════════════════════════════╝
 // .stglobalignore
 
-// ┌----------------------------------┐
-// | Operating system generated files |
-// └----------------------------------┘
-// ┌------------------┐
-// | GNU/Linux & UN*X |
-// └------------------┘
-(?d).directory
-(?d).Trash-*
 
-// ┌-------------┐
-// | Apple macOS |
-// └-------------┘
+// ╔══════════════════════════════════╗
+// ║ Operating system generated files ║
+// ╚══════════════════════════════════╝
+// ┌─────────────┐
+// │ Apple macOS │
+// └─────────────┘
 (?d).DS_Store
 (?d).localized
 (?d)._*
@@ -25,49 +21,67 @@
 (?d).Trash-1000
 (?d).iCloud
 
-// ┌-------------------┐
-// | Mcirosoft Windows |
-// └-------------------┘
+// ┌──────────────────┐
+// │ GNU/Linux & UN*X │
+// └──────────────────┘
+(?d).directory
+(?d).Trash-*
+
+// ┌───────────────────┐
+// │ Microsoft Windows │
+// └───────────────────┘
 (?d)desktop.ini
 (?d)ehthumbs.db
 (?d)Thumbs.db
 (?d)$RECYCLE.BIN
 (?d)System Volume Information
 
-// ┌--------------┐
-// | Synology DSM |
-// └--------------┘
-(?d)@eaDir
-
-// ┌----------┐
-// | QNAP QTS |
-// └----------┘
+// ┌──────────┐
+// │ QNAP QTS │
+// └──────────┘
 (?d).AppleDB
 (?d).@_thumb
 (?d).@__thumb
 
-// ┌-----------------------------┐
-// | Application generated files |
-// └-----------------------------┘
-// ┌-----------------┐
-// | Adobe Lightroom |
-// └-----------------┘
+// ┌──────────────┐
+// │ Synology DSM │
+// └──────────────┘
+(?d)@eaDir
+
+
+// ╔═════════════════════════════╗
+// ║ Application generated files ║
+// ╚═════════════════════════════╝
+// ┌─────────────────┐
+// │ Adobe Lightroom │
+// └─────────────────┘
 *Previews.lrdata root-pixels.db
 
-// ┌------------------┐
-// | Microsoft Office |
-// └------------------┘
-~*
-
-// ┌---------┐
-// | Dropbox |
-// └---------┘
+// ┌─────────┐
+// │ Dropbox │
+// └─────────┘
 .dropbox
 .dropbox.attr
 
-// ┌--------------┐
-// | Resilio Sync |
-// └--------------┘
+// ┌────────────────────────┐
+// │ Firefox & Chrom(ium│e) │
+// └────────────────────────┘
+*.part
+*.crdownload
+
+// ┌──────────────────┐
+// │ Microsoft Office │
+// └──────────────────┘
+~*
+
+// ┌───────────────────────────┐
+// │ Parallels Desktop for Mac │
+// └───────────────────────────┘
+.parallels-vm-directory
+
+// ┌──────────────┐
+// │ Resilio Sync │
+// └──────────────┘
 .sync
 *.bts
 *.!Sync
@@ -78,25 +92,9 @@
 *.SyncTemp
 *.SyncOld
 
-// ┌------------------------┐
-// | Firefox & Chrom(ium|e) |
-// └------------------------┘
-*.part
-*.crdownload
-
-// ┌---------------------------┐
-// | Parallels Desktop for Mac |
-// └---------------------------┘
-.parallels-vm-directory
-
-// ┌-----┐
-// | Vim |
-// └-----┘
-*.*.sw[a-p]
-
-// ┌----------------------------┐
-// | Temporary and backup files |
-// └----------------------------┘
+// ┌────────────────────────────┐
+// │ Temporary and backup files │
+// └────────────────────────────┘
 *.temporary
 *.tmp
 *._mp
@@ -108,3 +106,8 @@
 *.nch
 .*.swp
 *~
+
+// ┌─────┐
+// │ Vim │
+// └─────┘
+*.*.sw[a-p]
