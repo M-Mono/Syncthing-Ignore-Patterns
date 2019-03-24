@@ -16,6 +16,7 @@
 (?d).Icon*
 (?d).fseventsd
 (?d).Spotlight-V100
+(?d).DocumentRevisions-V100
 (?d).TemporaryItems
 (?d).Trashes
 (?d).Trash-1000

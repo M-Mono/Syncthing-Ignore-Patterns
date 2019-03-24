@@ -1,3 +1,3 @@
 // .stignore
 
-include .stglobalignore
+#include .stglobalignore
